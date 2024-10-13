@@ -50,9 +50,9 @@ def show():
     """, unsafe_allow_html=True)
 
     st.markdown("""
-            <div style='position: fixed; bottom: 20px; left: 60%; transform: translateX(-40%);'>
+            <div style='position: fixed; bottom: 20px; left: 57%; transform: translateX(-43%);'>
                 <h3 style='font-size: 18px; color: #1c0030; font-family: "Courier New", Courier, monospace;'>
-                    Made with ❤️ - USF-MSDS-601
+                    Made with ❤️ - USF-MSDS-601-Fall24
                 </h3>
             </div>
             """, unsafe_allow_html=True)

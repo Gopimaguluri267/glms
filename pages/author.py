@@ -2,11 +2,7 @@ import streamlit as st
 import base64
 
 def show():
-    st.markdown("""
-        <h1 style='text-align: center;'>
-            <span style='color: #ff9900;'>Contributors</span>
-        </h1>
-    """, unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: #ff9900;'>Contributors</h1>", unsafe_allow_html=True)
 
     people = [
         {"name": "Gopi Maguluri", "linkedin": "https://www.linkedin.com/in/gopimaguluri2267"},
@@ -22,18 +18,17 @@ def show():
 
     st.markdown("""
     <style>
-    .name-button {
-        display: inline-block;
-        padding: 5px 10px;
-        background-color: transparent;
-        color: #1c0030;
-        text-decoration: none;
+    .contributor {
         font-size: 18px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
+        color: #1c0030;
+        margin-bottom: 10px;
     }
-    .name-button:hover {
-        background-color: #fac069;
+    .guide {
+        font-size: 20px;
+        font-weight: bold;
+        color: #1c0030;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .linkedin-icon {
         height: 16px;
@@ -44,22 +39,30 @@ def show():
     </style>
     """, unsafe_allow_html=True)
 
-    names_html = ""
-    for person in people:
-        names_html += f"""
-        <a href="{person['linkedin']}" target="_blank" class="name-button">
-            {person['name']}
+    st.markdown(f"""
+    <div class="guide">
+        Guided by: 
+        <a href="https://www.linkedin.com/in/cody-j-carroll/" target="_blank">
+            Cody Carroll
             <img src="data:image/png;base64,{linkedin_icon_base64}" class="linkedin-icon">
         </a>
-        <br><br>
-        """
+    </div>
+    """, unsafe_allow_html=True)
 
-    st.markdown(names_html, unsafe_allow_html=True)
+    for person in people:
+        st.markdown(f"""
+        <div class="contributor">
+            <a href="{person['linkedin']}" target="_blank">
+                {person['name']}
+                <img src="data:image/png;base64,{linkedin_icon_base64}" class="linkedin-icon">
+            </a>
+        </div>
+        """, unsafe_allow_html=True)
 
     st.markdown("""
-            <div style='position: fixed; bottom: 20px; left: 60%; transform: translateX(-40%);'>
-                <h3 style='font-size: 18px; color: #1c0030; font-family: "Courier New", Courier, monospace;'>
-                    Made with ❤️ - USF-MSDS-601
-                </h3>
-            </div>
-            """, unsafe_allow_html=True)
+    <div style='position: fixed; bottom: 20px; left: 57%; transform: translateX(-43%);'>
+        <h3 style='font-size: 18px; color: #1c0030; font-family: "Courier New", Courier, monospace;'>
+            Made with ❤️ - USF-MSDS-601-Fall24
+        </h3>
+    </div>
+    """, unsafe_allow_html=True)

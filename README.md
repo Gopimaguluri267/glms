@@ -1,6 +1,8 @@
 # glms
 Blog/Application for Generalized Linear Models - USF-MSDS-601
 
+# URL: https://glms-usf-msds601-fall24.streamlit.app/
+
 Welcome to the Generalized Linear Models Learning app!
 
 ## Topics
@@ -18,13 +20,7 @@ Welcome to the Generalized Linear Models Learning app!
    git clone https://github.com/Gopimaguluri267/glms.git
    ```
 
-2. **Navigate to the Repository Directory**
-
-   ```
-   cd Generalized_Linear_Models
-   ```
-
-3. **Install Dependencies**
+2. **Install Dependencies**
 
    Make sure you have Python and pip installed. Then, install the required dependencies using:
 
@@ -32,7 +28,7 @@ Welcome to the Generalized Linear Models Learning app!
    pip install -r requirements.txt
    ```
 
-4. **Run the App**
+3. **Run the App**
 
    Once the dependencies are installed, you can launch the app using Streamlit:
 
@@ -40,6 +36,6 @@ Welcome to the Generalized Linear Models Learning app!
    streamlit run main.py
    ```
 
-5. **Access the App**
+4. **Access the App**
 
    After running the above command, the app will start running locally. Open your web browser and go to the URL displayed in the terminal to access the app.
